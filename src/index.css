@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-omni-green: #00ff9d;
+  --color-omni-green-dim: rgba(0, 255, 157, 0.2);
+  --color-omni-bg: #0a0c0f;
+  --color-omni-card: #15191e;
+  --color-omni-border: #2a323b;
+  
+  --font-tech: "Inter", system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-omni-bg text-white font-tech antialiased overflow-hidden;
+  }
+}
+
+.neon-glow {
+  box-shadow: 0 0 15px var(--color-omni-green);
+}
+
+.neon-text {
+  text-shadow: 0 0 8px var(--color-omni-green);
+}
+
+.glass-panel {
+  @apply bg-omni-card/80 border border-omni-border backdrop-blur-md;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-omni-green/30 rounded-full hover:bg-omni-green/50;
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Omnitrix Core",
+  "description": "Ứng dụng lõi Omnitrix với các chế độ Biomnitrix, Ultimate và Chaquetrix. Hỗ trợ dung hợp gen alien và tạo ảnh minh họa bằng AI.",
+  "requestFramePermissions": []
+}
